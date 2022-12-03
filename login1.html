@@ -1,0 +1,37 @@
+<?php
+if(isset($_POST["Submit"]))
+{
+header('Location:home.php');
+}
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Login</title>
+    </head>
+    <style>
+        .center
+        {
+            text-align:center;
+        }
+    </style>
+    <body>
+        <h1 style=' text-align:center;'>Login</h1>
+        <hr>
+        <br>
+        <br>
+        <Form name="userlogin" action="" method="Post">
+            <div class="center">
+       Username: <input type="text" id="username" Value=""><br><br>
+       
+       Password: <input type="password" id="password"><br><br>
+       <input type="Submit" Value="Login">
+      <br>
+      <p>Or sign up using </p><br>
+      <button>Google</button>
+      <button>Fb</button>
+      <button>Twitter</button>
+       </div>
+        </Form>
+    </body>
+</html>
